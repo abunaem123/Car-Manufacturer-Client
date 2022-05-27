@@ -5,7 +5,7 @@ const BusinessSummary = () => {
         <div className='px-12'>
             <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 my-8'>
                 <div>
-                    <img className='rounded-md drop-shadow-lg' src="https://i.ibb.co/nzFxzqL/pexels-fauxels-3184429.jpg" alt="" />
+                    <img className='rounded-md drop-shadow-lg' src="https://i.ibb.co/NKjc0cB/pexels-fauxels-3184429.png" alt="" />
                 </div>
                 <div>
                     <h1 className='text-3xl py-2 text-primary font-bold'>Business Deal</h1>

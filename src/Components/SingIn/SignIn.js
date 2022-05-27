@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import Loading from '../Shared/Loading/Loading';
 import auth from '../../firebase.init';
+import useToken from '../../hook/useToken/useToken';
 
 const SignIn = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -14,17 +15,25 @@ const SignIn = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [token] = useToken(user || gUser); // token
+
 
     let signInError;
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
+    // useEffect(() => {
+    //     if (gUser || user) {
+    //         navigate(from, { replace: true });
+    //     }
+    // }, [user, gUser, from, navigate])
+
     useEffect(() => {
-        if (gUser || user) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    }, [user, gUser, from, navigate])
+    }, [token, from, navigate])
 
     if (error || gError) {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small> </p>

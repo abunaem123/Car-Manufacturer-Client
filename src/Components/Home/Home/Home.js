@@ -3,6 +3,7 @@ import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
 import BusinessSummary from '../BusinessSummary/BusinessSummary';
+import HomeContact from '../HomeContact/HomeContact';
 import MakeParts from '../MakeParts/MakeParts';
 import Products from '../Product/Products';
 import Reviews from '../Reviews/Reviews';
@@ -17,6 +18,7 @@ const Home = () => {
             <BusinessSummary></BusinessSummary>
             <MakeParts></MakeParts>
             <Reviews></Reviews>
+            <HomeContact></HomeContact>
         </div>
     );
 };

@@ -3,6 +3,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfil
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useToken from '../../hook/useToken/useToken';
 import Loading from '../Shared/Loading/Loading';
 
 const SIgnUp = () => {
@@ -20,6 +21,14 @@ const SIgnUp = () => {
 
     const navigate = useNavigate();
 
+
+    //user info save krbo
+    const [token] = useToken(user || gUser);
+
+
+
+
+
     let signInError;
     if (error || gError || updating) {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small> </p>
@@ -30,7 +39,7 @@ const SIgnUp = () => {
         await createUserWithEmailAndPassword(data.email, data.password)
         await updateProfile({ displayName: data.name });
         console.log('updated');
-        navigate('/home')
+        // navigate('/home')
     }
 
     if (loading || gLoading || updating) {
@@ -38,6 +47,10 @@ const SIgnUp = () => {
     }
     if (gUser || user) {
         console.log(gUser || user)
+    }
+
+    if (token) {
+        navigate('/home');
     }
     return (
         <div className='flex  justify-center items-center py-12'>

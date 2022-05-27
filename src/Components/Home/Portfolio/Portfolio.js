@@ -4,7 +4,7 @@ import img from "../../../Images/photo_2022-04-11_01-57-00.jpg";
 const Portfolio = () => {
   return (
     <div >
-      <div className="grid grid-rows-3 grid-flow-col gap-5 px-12 lg:my-12">
+      <div className="grid lg:grid-rows-1 grid-rows-3 grid-flow-col gap-5 px-12 lg:my-12">
       <div className="lg:row-span-2 row-span-1">
         <div>
           <div class="avatar pb-12 pt-4">
