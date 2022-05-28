@@ -1,6 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import ProductsData from "../../hook/ProductsData/ProductsData";
 
-const DeleteModal = ({manageProduct}) => {
+const DeleteModal = ({product, manageProduct}) => {
+
+  
+
+  const [products, setproducts] = ProductsData();
+  const navigate = useNavigate();
+  const handleDelete = (id) => {
+    console.log(id);
+    
+      const url = `http://localhost:5000/product/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          const remaining = products.filter((product) => product._id !== id);
+          setproducts(remaining);
+        });
+    
+  };
   return (
     <div>
       <input type="checkbox" id="delete-modal" class="modal-toggle" />
@@ -14,7 +36,7 @@ const DeleteModal = ({manageProduct}) => {
             use Wikipedia for free!
           </p>
           <div class="modal-action">
-            <label for="delete-modal" class="btn">
+            <label for="delete-modal" class="btn" onClick={() => handleDelete()}>
               Yay!
             </label>
           </div>

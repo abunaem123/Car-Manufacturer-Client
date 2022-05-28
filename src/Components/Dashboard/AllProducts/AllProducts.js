@@ -14,6 +14,7 @@ const AllProducts = () => {
               <ShowProducts 
               product={product}
                 key={product._id}
+                setManageProduct={setManageProduct}
               ></ShowProducts>
             ))}
         </div>

@@ -14,7 +14,7 @@ const ShowProducts = ({ product,setManageProduct }) => {
     minimum_quantity,
   } = product;
 
-  const [products, setproducts] = ProductsData();
+ /*  const [products, setproducts] = ProductsData();
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
@@ -32,7 +32,7 @@ const ShowProducts = ({ product,setManageProduct }) => {
           setproducts(remaining);
         });
     }
-  };
+  }; */
 
   return (
     <div class="card lg:card-side bg-base-100 shadow-xl">
