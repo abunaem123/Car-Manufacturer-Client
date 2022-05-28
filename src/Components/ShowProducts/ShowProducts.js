@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProductsData from "../../hook/ProductsData/ProductsData";
+import DeleteModal from "../DeleteModal/DeleteModal";
 
 const ShowProducts = ({ product,setManageProduct }) => {
   const {

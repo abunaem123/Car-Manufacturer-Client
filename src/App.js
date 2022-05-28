@@ -31,11 +31,7 @@ function App() {
         <Route path='/addmyitem' element={<AddMyItem></AddMyItem>}></Route>
         <Route path='/manageproducts'element={<ManageProducts></ManageProducts>}></Route>
         <Route path='/allproducts' element={<AllProducts></AllProducts>}></Route>
-        <Route path='/portfolio' element={
-          <RequireAuth>
-            <Portfolio></Portfolio>
-          </RequireAuth>
-        }></Route>
+        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
         <Route path='/signup' element={<SIgnUp></SIgnUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
