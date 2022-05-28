@@ -47,12 +47,13 @@ function App() {
 
           <Route index element={<MyProfile></MyProfile>}></Route>
 
-          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          {/* <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route> */}
+          <Route path="users" element={<Users></Users>}></Route>
 
 
           <Route path="allorders" element={<RequireAdmin><AllOrder /></RequireAdmin>}></Route>
 
-          <Route path="manageproducts" element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>
+          <Route path="manageproducts" element={<ManageProducts></ManageProducts>}></Route>
           {/* <Route path="myorders" element={<MyOrders></MyOrders>}></Route> */}
           
           {/* <Route path="addreview" element={<AddNewReview></AddNewReview>}></Route> */}

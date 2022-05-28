@@ -15,6 +15,7 @@ const Dashboard = () => {
                 <Outlet></Outlet>
 
 
+
             </div>
             <div class="drawer-side">
                 <label for="dashboard-sidebar" class="drawer-overlay"></label>
@@ -36,7 +37,7 @@ const Dashboard = () => {
                     )}
 
 
-                    {admin && (
+                    { (
                         <>
                             <li>
                                 <Link to="/dashboard/allorders">
