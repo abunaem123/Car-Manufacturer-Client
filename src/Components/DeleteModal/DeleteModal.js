@@ -1,15 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ProductsData from "../../hook/ProductsData/ProductsData";
 
 const DeleteModal = ({product, manageProduct}) => {
+ const id=useParams();
+ const {_id}= product;
 
   
 
   const [products, setproducts] = ProductsData();
   const navigate = useNavigate();
   const handleDelete = (id) => {
-    console.log(id);
     
       const url = `http://localhost:5000/product/${id}`;
       fetch(url, {
@@ -36,7 +37,7 @@ const DeleteModal = ({product, manageProduct}) => {
             use Wikipedia for free!
           </p>
           <div class="modal-action">
-            <label for="delete-modal" class="btn" onClick={() => handleDelete()}>
+            <label for="delete-modal" class="btn" onClick={() => handleDelete(_id)}>
               Yay!
             </label>
           </div>
