@@ -53,8 +53,12 @@ const SIgnUp = () => {
         navigate('/home');
     }
     return (
-        <div className='flex  justify-center items-center py-12'>
-            <div className="card w-96 bg-base-100 shadow-xl">
+        <div className='flex  justify-center items-center py-12 grid lg:grid-cols-2'>
+            <div>
+                <img src="https://i.ibb.co/JCdG45V/image-2022-05-28-T15-03-37-765-Z.png" alt="" />
+            </div>
+            <div>
+            <div className="card w-96 mx-auto bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="text-center text-2xl font-bold">Sign Up</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -166,6 +170,8 @@ const SIgnUp = () => {
 
                 </div>
             </div>
+            </div>
+            
         </div>
     );
 };
