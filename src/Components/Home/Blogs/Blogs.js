@@ -7,9 +7,9 @@ const Blogs = () => {
         Blogs{" "}
       </h1>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4">
-        <div class="card lg:w-full bg-base-100 shadow-xl ">
-          <div class="card-body">
-            <h2 class="card-title font-bold">
+        <div className="card lg:w-full bg-base-100 shadow-xl ">
+          <div className="card-body">
+            <h2 className="card-title font-bold">
             What are the different ways to manage a state in a React application?
             </h2>
             <p>
@@ -24,9 +24,9 @@ const Blogs = () => {
             </p>
           </div>
         </div>
-        <div class="card lg:w-full bg-base-100 shadow-xl ">
-          <div class="card-body">
-            <h2 class="card-title  font-bold">
+        <div className="card lg:w-full bg-base-100 shadow-xl ">
+          <div className="card-body">
+            <h2 className="card-title  font-bold">
             What is a unit test? Why should write unit tests?
             </h2>
             <p>
@@ -34,9 +34,9 @@ const Blogs = () => {
             </p>
           </div>
         </div>
-        <div class="card lg:w-full bg-base-100 shadow-xl ">
-          <div class="card-body  ">
-            <h2 class="card-title font-bold">How will you improve the performance of a React Application?</h2>
+        <div className="card lg:w-full bg-base-100 shadow-xl ">
+          <div className="card-body  ">
+            <h2 className="card-title font-bold">How will you improve the performance of a React Application?</h2>
             <p>
               1. Keeping component state local where necessary. <br />
               2. Memoizing React components to prevent unnecessary re-renders. <br />
@@ -46,9 +46,9 @@ const Blogs = () => {
             </p>
           </div>
         </div>
-        <div class="card lg:w-full bg-base-100 shadow-xl ">
-          <div class="card-body">
-            <h2 class="card-title  font-bold">
+        <div className="card lg:w-full bg-base-100 shadow-xl ">
+          <div className="card-body">
+            <h2 className="card-title  font-bold">
             How does prototypical inheritance work?
             </h2>
             <p>
@@ -56,9 +56,9 @@ const Blogs = () => {
             </p>
           </div>
         </div>
-        <div class="card lg:w-full bg-base-100 shadow-xl ">
-          <div class="card-body">
-            <h2 class="card-title font-bold">
+        <div className="card lg:w-full bg-base-100 shadow-xl ">
+          <div className="card-body">
+            <h2 className="card-title font-bold">
               {" "}
               Why you do not set the state directly in React?
             </h2> 

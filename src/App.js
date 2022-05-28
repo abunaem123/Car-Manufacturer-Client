@@ -1,6 +1,9 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddMyItem from './Components/AddMyItem/AddMyItem';
+import AllProducts from './Components/Dashboard/AllProducts/AllProducts';
+import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import About from './Components/Home/About/About';
 import AddReview from './Components/Home/AddReview/AddReview';
 import Blogs from './Components/Home/Blogs/Blogs';
@@ -25,6 +28,9 @@ function App() {
         <Route path='/reviews' element={<Reviews></Reviews>}> </Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/addreview' element={<AddReview></AddReview>}></Route>
+        <Route path='/addmyitem' element={<AddMyItem></AddMyItem>}></Route>
+        <Route path='/manageproducts'element={<ManageProducts></ManageProducts>}></Route>
+        <Route path='/allproducts' element={<AllProducts></AllProducts>}></Route>
         <Route path='/portfolio' element={
           <RequireAuth>
             <Portfolio></Portfolio>

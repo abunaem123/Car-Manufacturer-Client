@@ -7,8 +7,8 @@ const Portfolio = () => {
       <div className="grid lg:grid-rows-1 grid-rows-3 grid-flow-col gap-5 px-12 lg:my-12">
       <div className="lg:row-span-2 row-span-1">
         <div>
-          <div class="avatar pb-12 pt-4">
-            <div class="w-48  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="avatar pb-12 pt-4">
+            <div className="w-48  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img src={img} />
             </div>
           </div>
@@ -34,81 +34,81 @@ const Portfolio = () => {
           freelancing, so I want to improve my skill.
         </p>
         <div className="py-2">
-          <div class="flex justify-between mb-1">
-            <span class="text-base font-medium text-secondary dark:text-white">
+          <div className="flex justify-between mb-1">
+            <span className="text-base font-medium text-secondary dark:text-white">
               HTML
             </span>
-            <span class="text-sm font-medium text-secondary dark:text-white">
+            <span className="text-sm font-medium text-secondary dark:text-white">
               98%
             </span>
           </div>
-          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              class="bg-primary h-2.5 rounded-full"
+              className="bg-primary h-2.5 rounded-full"
               style={{ width: "98%" }}
             ></div>
           </div>
         </div>
         <div className="py-2">
-          <div class="flex justify-between mb-1">
-            <span class="text-base font-medium text-secondary dark:text-white">
+          <div className="flex justify-between mb-1">
+            <span className="text-base font-medium text-secondary dark:text-white">
               CSS
             </span>
-            <span class="text-sm font-medium text-secondary dark:text-white">
+            <span className="text-sm font-medium text-secondary dark:text-white">
               95%
             </span>
           </div>
-          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              class="bg-secondary h-2.5 rounded-full"
+              className="bg-secondary h-2.5 rounded-full"
               style={{ width: "95%" }}
             ></div>
           </div>
         </div>
         <div className="py-2">
-          <div class="flex justify-between mb-1">
-            <span class="text-base font-medium text-secondary dark:text-white">
+          <div className="flex justify-between mb-1">
+            <span className="text-base font-medium text-secondary dark:text-white">
               JAVASCRIPT
             </span>
-            <span class="text-sm font-medium text-secondary dark:text-white">
+            <span className="text-sm font-medium text-secondary dark:text-white">
               90%
             </span>
           </div>
-          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              class="bg-primary h-2.5 rounded-full"
+              className="bg-primary h-2.5 rounded-full"
               style={{ width: "90%" }}
             ></div>
           </div>
         </div>
         <div className="py-2">
-          <div class="flex justify-between mb-1">
-            <span class="text-base font-medium text-secondary dark:text-white">
+          <div className="flex justify-between mb-1">
+            <span className="text-base font-medium text-secondary dark:text-white">
               REACT
             </span>
-            <span class="text-sm font-medium text-secondary dark:text-white">
+            <span className="text-sm font-medium text-secondary dark:text-white">
               85%
             </span>
           </div>
-          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              class="bg-secondary h-2.5 rounded-full"
+              className="bg-secondary h-2.5 rounded-full"
               style={{ width: "85%" }}
             ></div>
           </div>
         </div>
         <div className="py-2">
-          <div class="flex justify-between mb-1">
-            <span class="text-base font-medium text-secondary dark:text-white">
+          <div className="flex justify-between mb-1">
+            <span className="text-base font-medium text-secondary dark:text-white">
               WORDPRESS
             </span>
-            <span class="text-sm font-medium text-secondary dark:text-white">
+            <span className="text-sm font-medium text-secondary dark:text-white">
               98%
             </span>
           </div>
-          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              class="bg-primary h-2.5 rounded-full"
+              className="bg-primary h-2.5 rounded-full"
               style={{ width: "99%" }}
             ></div>
           </div>
