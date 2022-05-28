@@ -13,14 +13,13 @@ const Header = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/purchase">Purchase</Link></li>
-        <li><Link to="/review">Review</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
         <li><Link to="/portfolio">Portfolio</Link></li>
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
 
-        <li>{user ? <button className="btn btn-ghost" onClick={logout}>Sign Out</button> : <Link to="/signin">SignIn</Link>}</li>
+        <li>{user ? <button className="btn btn-ghost" onClick={logout}>Sign Out</button> : <Link to="/signin">Sign In</Link>}</li>
 
     </>
     return (

@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddMyItem from './Components/AddMyItem/AddMyItem';
 import AllProducts from './Components/Dashboard/AllProducts/AllProducts';
+import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import About from './Components/Home/About/About';
 import AddReview from './Components/Home/AddReview/AddReview';
@@ -10,6 +11,8 @@ import Blogs from './Components/Home/Blogs/Blogs';
 import Home from './Components/Home/Home/Home';
 import Portfolio from './Components/Home/Portfolio/Portfolio';
 import Reviews from './Components/Home/Reviews/Reviews';
+import Payment from './Components/Purchase/Payment';
+import Purchase from './Components/Purchase/Purchase';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import NotFound from './Components/Shared/NotFound/NotFound';
@@ -26,7 +29,10 @@ function App() {
         <Route path='/home'element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}> </Route>
+        <Route path='product/:productId' element={<Purchase></Purchase>}></Route>
+        <Route path='/payment/:paymentId' element={<Payment></Payment>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/addreview' element={<AddReview></AddReview>}></Route>
         <Route path='/addmyitem' element={<AddMyItem></AddMyItem>}></Route>
         <Route path='/manageproducts'element={<ManageProducts></ManageProducts>}></Route>

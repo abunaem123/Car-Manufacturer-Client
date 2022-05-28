@@ -49,14 +49,14 @@ const SignIn = () => {
         return <Loading></Loading>
     }
     return (
-        <div className='flex h-screen justify-center items-center grid lg:grid-cols-2'>
+        <div className='flex py-12 justify-center items-center grid lg:grid-cols-2 px-12'>
             <div className='mx-auto w-96'>
                 <img src="https://i.ibb.co/3NjdgxW/image-2022-05-28-T15-08-54-514-Z.png" alt="" />
             </div>
             <div>
             <div className="card w-96 bg-base-100 shadow-xl mx-auto">
                 <div className="card-body">
-                    <h2 className="text-center text-2xl font-bold">Login</h2>
+                    <h2 className="text-center text-2xl font-bold">Sign In</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                     
