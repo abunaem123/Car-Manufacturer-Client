@@ -20,7 +20,7 @@ const AddReview = () => {
       });
   };
   return (
-    <div className="add-item mx-auto mx-96 mt-5 mb-5">
+    <div className="add-item mx-auto  mt-5 mb-5">
       {/* ========  */}
       <div className="w-full max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h1 className="text-primary text-xl font-bold text-center">
