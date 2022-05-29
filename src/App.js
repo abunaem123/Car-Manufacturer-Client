@@ -51,18 +51,17 @@ function App() {
           <Route path="users" element={<Users></Users>}></Route>
 
 
-          <Route path="allorders" element={<RequireAdmin><AllOrder /></RequireAdmin>}></Route>
+          <Route path="allorders" element={<AllOrder />}></Route>
 
           <Route path="manageproducts" element={<ManageProducts></ManageProducts>}></Route>
           {/* <Route path="myorders" element={<MyOrders></MyOrders>}></Route> */}
-          
-          {/* <Route path="addreview" element={<AddNewReview></AddNewReview>}></Route> */}
-          <Route path="addproduct" element={<RequireAdmin><AddMyItem></AddMyItem></RequireAdmin>}></Route>
+          <Route path="addproduct" element={<AddMyItem></AddMyItem>}></Route>
+          <Route path='addreview' element={<AddReview></AddReview>}></Route>
 
 
         </Route>
 
-        <Route path='/addreview' element={<AddReview></AddReview>}></Route>
+        
         <Route path='/addmyitem' element={<AddMyItem></AddMyItem>}></Route>
         <Route path='/manageproducts'element={<ManageProducts></ManageProducts>}></Route>
         <Route path='/allproducts' element={<AllProducts></AllProducts>}></Route>
