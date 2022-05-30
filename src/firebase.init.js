@@ -5,13 +5,23 @@ import {getAuth} from 'firebase/auth'
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyD1eAHKmpXJ7VySaxPSi9quVhu6-AudySo",
+//   authDomain: "car-manufacturer-dd339.firebaseapp.com",
+//   projectId: "car-manufacturer-dd339",
+//   storageBucket: "car-manufacturer-dd339.appspot.com",
+//   messagingSenderId: "1055602252768",
+//   appId: "1:1055602252768:web:cb031aeded54bfea596985"
+// };
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyD1eAHKmpXJ7VySaxPSi9quVhu6-AudySo",
-  authDomain: "car-manufacturer-dd339.firebaseapp.com",
-  projectId: "car-manufacturer-dd339",
-  storageBucket: "car-manufacturer-dd339.appspot.com",
-  messagingSenderId: "1055602252768",
-  appId: "1:1055602252768:web:cb031aeded54bfea596985"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDERID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 // Initialize Firebase

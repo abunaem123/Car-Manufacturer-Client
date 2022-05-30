@@ -12,7 +12,7 @@ const ShowProducts = ({ product, setManageProduct }) => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you Sure?");
     if (proceed) {
-      const url = `http://localhost:5000/product/${id}`;
+      const url = `https://gentle-dawn-71731.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -41,7 +41,7 @@ const ShowProducts = ({ product, setManageProduct }) => {
         <label
           onClick={() => handleDelete(_id)}
           for="delete-modal"
-          class="btn bg-primary font-bold border-none text-white"
+          className="btn bg-primary font-bold border-none text-white"
         >
           DELETE PRODUCT
         </label>

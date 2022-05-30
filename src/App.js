@@ -11,7 +11,6 @@ import Blogs from './Components/Home/Blogs/Blogs';
 import Home from './Components/Home/Home/Home';
 import Portfolio from './Components/Home/Portfolio/Portfolio';
 import Reviews from './Components/Home/Reviews/Reviews';
-import Payment from './Components/Purchase/Payment';
 import Purchase from './Components/Purchase/Purchase';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
@@ -23,6 +22,8 @@ import MyProfile from './Components/Dashboard/MyProfile';
 import RequireAdmin from './Components/SingIn/RequireAdmin';
 import AllOrder from './Components/Dashboard/AllOrder';
 import Users from './Components/Dashboard/Users';
+import MyOrders from './Components/Dashboard/MyOrders';
+import Payment from './Components/Purchase/Payment'
 
 function App() {
   return (
@@ -33,7 +34,11 @@ function App() {
         <Route path='/home'element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}> </Route>
-        <Route path='product/:productId' element={<Purchase></Purchase>}></Route>
+        <Route path='product/:productId' element={
+        <RequireAuth>
+          <Purchase></Purchase>
+        </RequireAuth>
+        }></Route>
         <Route path='/payment/:paymentId' element={<Payment></Payment>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         
@@ -48,14 +53,14 @@ function App() {
           <Route index element={<MyProfile></MyProfile>}></Route>
 
           {/* <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route> */}
-          <Route path="users" element={<Users></Users>}></Route>
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
 
 
           <Route path="allorders" element={<AllOrder />}></Route>
 
-          <Route path="manageproducts" element={<ManageProducts></ManageProducts>}></Route>
-          {/* <Route path="myorders" element={<MyOrders></MyOrders>}></Route> */}
-          <Route path="addproduct" element={<AddMyItem></AddMyItem>}></Route>
+          <Route path="manageproducts" element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>
+          <Route path="myorders" element={<MyOrders></MyOrders>}></Route>
+          <Route path="addproduct" element={<RequireAdmin><AddMyItem></AddMyItem></RequireAdmin>}></Route>
           <Route path='addreview' element={<AddReview></AddReview>}></Route>
 
 
@@ -63,7 +68,7 @@ function App() {
 
         
         <Route path='/addmyitem' element={<AddMyItem></AddMyItem>}></Route>
-        <Route path='/manageproducts'element={<ManageProducts></ManageProducts>}></Route>
+        {/* <Route path='/manageproducts'element={<ManageProducts></ManageProducts>}></Route> */}
         <Route path='/allproducts' element={<AllProducts></AllProducts>}></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
