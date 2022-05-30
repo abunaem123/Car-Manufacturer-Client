@@ -1,23 +1,20 @@
 [
     {
-      "_id":"1",
       "name": "Valentine Michael",
-      "picture": "https://i.ibb.co/JyxfQ96/people1.png",
-      "content": "Ad eu qui dolor fugiat excepteur nostrud. Deserunt amet voluptate irure cupidatat amet sunt ipsum ex aliqua occaecat officia aliqua. Tempor dolore deserunt enim incididunt ex eiusmod. Enim aliquip magna occaecat qui eiusmod cupidatat quis minim ipsum culpa excepteur.\r\n",
+      "img": "https://i.ibb.co/JyxfQ96/people1.png",
+      "reviewTitle": "It worked great on my 2010 explorer limited v6 4x4 but the abs speed censor didn't work with my wiring harness, not sure what the issue was. I wound up spoofing the old connector to the new wire, it works like a charm now.",
       "rating": "5"
     },
     {
-      "_id":"2",
       "name": "Noel Ryan",
-      "picture": "https://i.ibb.co/28FVS2G/people2.png",
-      "content": "Laboris fugiat eiusmod labore incididunt do cupidatat. Veniam culpa laboris ex nisi consectetur ex aliqua dolore. Eu nisi aute cupidatat fugiat ipsum minim reprehenderit culpa magna mollit. Voluptate excepteur elit nostrud in non elit dolore voluptate aute nisi culpa nisi. Et id aute culpa quis commodo consequat nisi. Laboris ullamco cillum cupidatat minim eiusmod ipsum et esse deserunt.\r\n",
+      "img": "https://i.ibb.co/28FVS2G/people2.png",
+      "reviewTitle": "I had to change out the serpentine belt on one of my vehicles, and of course such a simple job required me to remove the front passenger wheel and plastic mud guard behind the wheel in order to access the belt. I miss the good ole days when the belt was right up front and took all of five minutes to replace….but I digress.",
       "rating": "4"
     },
     {
-      "_id":"3",
       "name": "Howell Flynn",
-      "picture": "https://i.ibb.co/ZxL49sp/people3.png",
-      "content": "Ea aliquip aliqua minim sunt incididunt sunt velit commodo ea mollit voluptate sit. Eu in aliqua sit exercitation eu esse occaecat ipsum id sit cillum aliqua minim qui. Cupidatat non nostrud excepteur sunt magna fugiat labore est. Labore nostrud laborum anim id amet esse Lorem aute aute dolore tempor culpa. Ea veniam cillum culpa irure cillum aliqua eiusmod dolore laborum occaecat proident non velit. Magna mollit amet magna et adipisicing amet.\r\n",
+      "img": "https://i.ibb.co/ZxL49sp/people3.png",
+      "reviewTitle": "I was excited to get these as I have 5 cars with so many drivers in my house. Bought them specifically for a project on my son’s Prius. I found fasteners in the box that worked but I had to remove some to make adjustments to something and that is when I discovered how cheap the plastic was. The heads just crumbled under any amount of pressure to remove.",
       "rating": "5"
     }
   ]

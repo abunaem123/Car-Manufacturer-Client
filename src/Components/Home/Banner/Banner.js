@@ -10,7 +10,7 @@ const Banner = () => {
                     <div className='lg:pr-28'>
                         <h1 className="text-5xl font-bold text-white">Find The Riht Parts Faster</h1>
                         <p className="py-6 text-white">Parts to keep your motor running. Service that overcomes the competition.</p>
-                        <button className="btn btn-primary font-bold text-white px-4 my-4">Get Started</button>
+                        <button hre className="btn btn-primary font-bold text-white px-4 my-4">Get Started</button>
                     </div>
                 </div>
             </div>

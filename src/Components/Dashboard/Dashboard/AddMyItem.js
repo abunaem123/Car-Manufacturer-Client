@@ -9,9 +9,9 @@ const AddMyItem = () => {
     const onSubmit = data =>{
         swal({
             title: "Good job!",
-            text: "You clicked the button!",
+            text: "Your Product Added",
             icon: "success",
-            button: "Aww yiss!",
+            button: "Done",
           });
         const url=`https://gentle-dawn-71731.herokuapp.com/addmyitem`;
         fetch(url,{

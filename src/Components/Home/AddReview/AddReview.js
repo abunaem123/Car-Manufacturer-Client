@@ -83,7 +83,7 @@ const AddReview = () => {
 
         <select
           name="rating"
-          className="input w-full input-bordered"
+          className="input w-full input-bordered "
           {...register("rating")}
         >
           <option value="1">1</option>
@@ -94,9 +94,9 @@ const AddReview = () => {
         </select>
         <textarea
           type="text"
-          name="description"
+          name="description "
           placeholder="Type your feedback"
-          className="textarea textarea-bordered w-full mb-3"
+          className="textarea textarea-bordered w-full my-4"
           {...register("reviewTitle")}
         />
         <input

@@ -9,7 +9,7 @@ const Reviews = () => {
         fetch('https://gentle-dawn-71731.herokuapp.com/review')
         .then(res => res.json())
         .then(data => setReviews(data))
-    })
+    },[])
     return (
         <div className='px-12 mx-auto'>
             <div className='lg:py-12 sm:py-0'>

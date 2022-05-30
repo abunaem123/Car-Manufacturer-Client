@@ -13,6 +13,7 @@ const Users = () => {
     if (isLoading) {
         return <Loading></Loading>
     }
+    console.log(users)
     return (
         <div className='px-12 mx-auto'>
             <h2 className="text-2xl m-2">All Users: {users.length}</h2>
@@ -28,7 +29,7 @@ const Users = () => {
                     </thead>
                     <tbody>
                         {
-                            users.map(user => <UserRow
+                            users?.map(user => <UserRow
                                 key={user._id}
                                 user={user}
                                 refetch={refetch}
